@@ -3,7 +3,7 @@
  }
 
 body{
-    background-color: rgb(186, 213, 247);
+    background-color: rgb(92, 142, 204);
     font-family: 'Times New Roman', Times, serif;
     display: flex;
     justify-content: center;
@@ -22,7 +22,11 @@ body{
 h1{
     text-align: center;
 }
+
 button{
-    background-color: rgb(186, 213, 247);
-   
+    background-color: rgb(182, 182, 182);
+    width: 100%;
+    font-size:medium;
+    font-family: 'Times New Roman', Times, serif;
+    
 }
