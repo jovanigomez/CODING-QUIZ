@@ -71,4 +71,17 @@ const submitBtn = document.getElementById('submit')
 
 console.log(quizData)
 console.log(quizData[0])
+console.log(quizData[0].question)
 console.log(question)
+
+
+question.textContent = quizData[0].question
+question.textContent = quizData[0].a
+question.textContent = quizData[0].b
+question.textContent = quizData[0].c
+question.textContent = quizData[0].d
+
+
+
+
+
