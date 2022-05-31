@@ -81,11 +81,22 @@ a.value = quizData[0].a
 b.value = quizData[0].b
 c.value = quizData[0].c
 d.value = quizData[0].d
-questionEl.textContent = quizData[0].question
-
-a_text.innerText = quizData[0].a_text
-b_text.innerText = quizData[0].b_text
-c_text.innerText = quizData[0].c_text
-d_text.innerText = quizData[0]._text
 
 
+a_text.innerText = quizData[0].a
+b_text.innerText = quizData[0].b
+c_text.innerText = quizData[0].c
+d_text.innerText = quizData[0].d
+
+
+
+
+submitBtn.addEventListener("click", function() {
+   
+   document.getElementById('submit').innerHTML = "correct!";
+   
+    
+  });
+
+  
+  
