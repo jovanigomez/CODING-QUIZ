@@ -62,10 +62,10 @@ const quizData = [
 const  quiz= document.getElementById('quiz')
 const answerEls = document.querySelectorAll('.answer')
 const questionEl = document.getElementById('question')
-const a_text = document.getElementById('a_text')
-const b_text = document.getElementById('b_text')
-const c_text = document.getElementById('c_text')
-const d_text = document.getElementById('d_text')
+const a = document.getElementById('a')
+const b = document.getElementById('b')
+const c = document.getElementById('c')
+const d = document.getElementById('d')
 const submitBtn = document.getElementById('submit')
 
 
@@ -75,13 +75,17 @@ console.log(quizData[0].question)
 console.log(question)
 
 
-question.textContent = quizData[0].question
-question.textContent = quizData[0].a
-question.textContent = quizData[0].b
-question.textContent = quizData[0].c
-question.textContent = quizData[0].d
 
+questionEl.textContent = quizData[0].question
+a.value = quizData[0].a
+b.value = quizData[0].b
+c.value = quizData[0].c
+d.value = quizData[0].d
+questionEl.textContent = quizData[0].question
 
-
+a_text.innerText = quizData[0].a_text
+b_text.innerText = quizData[0].b_text
+c_text.innerText = quizData[0].c_text
+d_text.innerText = quizData[0]._text
 
 
