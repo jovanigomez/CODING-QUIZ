@@ -69,6 +69,7 @@ const d = document.getElementById('d')
 const submitBtn = document.getElementById('submit')
 
 
+
 console.log(quizData)
 console.log(quizData[0])
 console.log(quizData[0].question)
@@ -76,17 +77,21 @@ console.log(question)
 
 
 
-questionEl.textContent = quizData[0].question
-a.value = quizData[0].a
-b.value = quizData[0].b
-c.value = quizData[0].c
-d.value = quizData[0].d
+function showQuestion() {
+    questionEl.textContent = quizData[0].question
+    a.value = quizData[questionIndex].a
+    b.value = quizData[questionIndex].b
+    c.value = quizData[questionIndex].c
+    d.value = quizData[questionIndex].d
 
 
-a_text.innerText = quizData[0].a
-b_text.innerText = quizData[0].b
-c_text.innerText = quizData[0].c
-d_text.innerText = quizData[0].d
+    a_text.innerText = quizData[questionIndex].a
+    b_text.innerText = quizData[questionIndex].b
+    c_text.innerText = quizData[questionIndex].c
+    d_text.innerText = quizData[questionIndex].d
+
+
+}
 
 
 
@@ -126,7 +131,7 @@ submitBtn.addEventListener("click", function () {
 
     for (let i = 0; i < answerEls.length; i++) {
         if (answerEls[i].checked) {
-            if (answerEls[i].id == quizData[1].correct) {
+            if (answerEls[i].id == quizData[questionIndex].correct) {
                 document.getElementById('submit').innerHTML = "correct!";
             } else {
                 document.getElementById('submit').innerHTML = "incorrect!";
@@ -134,6 +139,9 @@ submitBtn.addEventListener("click", function () {
         }
     }
 
+
+    questionIndex++
+    showQuestion()
 
 });
 
