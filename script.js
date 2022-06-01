@@ -96,34 +96,6 @@ function showQuestion() {
 
 
 
-submitBtn.addEventListener("click", function() {
-   
-   document.getElementById('submit').innerHTML = "correct!";
-   
-    
-  });
-
-  
-
-  console.log(quizData)
-console.log(quizData[1])
-console.log(quizData[1].question)
-console.log(question)
-
-
-
-questionEl.textContent = quizData[1].question
-a.value = quizData[1].a
-b.value = quizData[1].b
-c.value = quizData[1].c
-d.value = quizData[1].d
-
-
-a_text.innerText = quizData[1].a
-b_text.innerText = quizData[1].b
-c_text.innerText = quizData[1].c
-d_text.innerText = quizData[1].d
-
 
 
 submitBtn.addEventListener("click", function () {
@@ -147,7 +119,7 @@ submitBtn.addEventListener("click", function () {
 
 
 
-
+showQuestion()
 
 
 
