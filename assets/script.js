@@ -18,7 +18,7 @@ const quizData = [
     },
 
     {
-        question: "whats a Boolean? ",
+        question: "Whats a Boolean? ",
         a:"binary varible, that stands for neither true or false",
         b:"an array",
         c:"a variable that does noting",
@@ -27,7 +27,7 @@ const quizData = [
     },
 
     {
-        question: "whats an Array? ",
+        question: "Whats an Array? ",
         a:"an ordered list of values",
         b:"an un-ordered list of values",
         c:"its a laser!",
@@ -45,7 +45,7 @@ const quizData = [
     },
 
     {
-        question: "what does JavaScript do?",
+        question: "What does JavaScript do?",
         a:"doesnt add features on the page",
         b:"adds color to a web page",
         c:"displays static info",
