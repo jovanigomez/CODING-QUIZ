@@ -126,7 +126,7 @@ submitBtn.addEventListener("click", function () {
 
     for (let i = 0; i < answerEls.length; i++) {
         if (answerEls[i].checked) {
-            if (answerEls[i].id == quizData[0].correct) {
+            if (answerEls[i].id == quizData[1].correct) {
                 document.getElementById('submit').innerHTML = "correct!";
             } else {
                 document.getElementById('submit').innerHTML = "incorrect!";
@@ -136,3 +136,11 @@ submitBtn.addEventListener("click", function () {
 
 
 });
+
+
+
+
+
+
+
+
