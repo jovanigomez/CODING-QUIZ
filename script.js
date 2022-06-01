@@ -3,7 +3,7 @@ const quizData = [
         question: "What does HTML stand for? ",
         a:"Hypertext Markdown Language",
         b:"Hype Text Made Up Language",
-        c:"Hypertext Makeup Language",
+        c:"Hypertext Markup Language",
         d:"How's The Movie Like?",
         correct: "c",
     },
@@ -94,7 +94,7 @@ function showQuestion() {
 }
 
 
-
+let questionIndex = 0
 
 
 
