@@ -99,4 +99,40 @@ submitBtn.addEventListener("click", function() {
   });
 
   
-  
+
+  console.log(quizData)
+console.log(quizData[1])
+console.log(quizData[1].question)
+console.log(question)
+
+
+
+questionEl.textContent = quizData[1].question
+a.value = quizData[1].a
+b.value = quizData[1].b
+c.value = quizData[1].c
+d.value = quizData[1].d
+
+
+a_text.innerText = quizData[1].a
+b_text.innerText = quizData[1].b
+c_text.innerText = quizData[1].c
+d_text.innerText = quizData[1].d
+
+
+
+submitBtn.addEventListener("click", function () {
+
+
+    for (let i = 0; i < answerEls.length; i++) {
+        if (answerEls[i].checked) {
+            if (answerEls[i].id == quizData[0].correct) {
+                document.getElementById('submit').innerHTML = "correct!";
+            } else {
+                document.getElementById('submit').innerHTML = "incorrect!";
+            }
+        }
+    }
+
+
+});
