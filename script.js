@@ -21,9 +21,9 @@ const quizData = [
         question: "whats a Boolean? ",
         a:"binary varible, that stands for neither true or false",
         b:"an array",
-        c:"binary variable, having a true or false value",
-        d:"a variable that does noting",
-        correct: "c",
+        c:"a variable that does noting",
+        d:"binary variable, having a true or false value",
+        correct: "d",
     },
 
     {
@@ -37,19 +37,19 @@ const quizData = [
 
     {
         question: "Whats a generator in JavaScript? ",
-        a:"something that makes stuff",
+        a:"it doesnt return an object",
         b:"it powers computers!",
-        c:"",
-        d:"dedrr",
+        c:"it returns an object",
+        d:"powers code",
         correct: "c",
     },
 
     {
-        question: "ay ay ay ",
-        a:"jdjjd",
-        b:"ddrre",
-        c:"crccrc",
-        d:"dedrr",
+        question: "what does JavaScript do?",
+        a:"doesnt add features on the page",
+        b:"adds color to a web page",
+        c:"displays static info",
+        d:"the skeleton of a web page",
         correct: "c",
     },
 
@@ -68,17 +68,10 @@ const c = document.getElementById('c')
 const d = document.getElementById('d')
 const submitBtn = document.getElementById('submit')
 
-
-
-console.log(quizData)
-console.log(quizData[0])
-console.log(quizData[0].question)
-console.log(question)
-
-
+let questionIndex = 0
 
 function showQuestion() {
-    questionEl.textContent = quizData[0].question
+    questionEl.textContent = quizData[questionIndex].question
     a.value = quizData[questionIndex].a
     b.value = quizData[questionIndex].b
     c.value = quizData[questionIndex].c
@@ -94,7 +87,7 @@ function showQuestion() {
 }
 
 
-let questionIndex = 0
+
 
 
 
@@ -116,7 +109,6 @@ submitBtn.addEventListener("click", function () {
     showQuestion()
 
 });
-
 
 
 showQuestion()
