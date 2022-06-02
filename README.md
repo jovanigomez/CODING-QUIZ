@@ -15,7 +15,7 @@
 ## Links: 
 * [Deployed Website](https://jovanigomez.github.io/CODING-QUIZ/)
 
-## Credits 
+## Credits: 
 Jovani Gomez
 
 ## Email:

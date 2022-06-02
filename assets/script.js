@@ -59,6 +59,7 @@ const quizData = [
 
 
 ];
+const startBtnEl = document.getElementById('start-btn')
 const  quiz= document.getElementById('quiz')
 const answerEls = document.querySelectorAll('.answer')
 const questionEl = document.getElementById('question')
@@ -113,6 +114,6 @@ submitBtn.addEventListener("click", function () {
 
 showQuestion()
 
-
+ 
 
 
