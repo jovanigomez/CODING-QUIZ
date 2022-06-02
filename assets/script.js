@@ -117,3 +117,6 @@ showQuestion()
  
 
 
+function startQuiz() {
+    qsectionEl.hidden = '';
+}
