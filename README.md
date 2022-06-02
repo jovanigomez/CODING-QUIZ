@@ -1,6 +1,6 @@
 # CODING-QUIZ
 ## Challenge Discription:
-- Create a quiz using mainly JavaScript 
+- In this challenge I create a quiz using mainly JavaScript to make it an interactive experience for users.
 
 ## Languages used: 
 - HTML 
