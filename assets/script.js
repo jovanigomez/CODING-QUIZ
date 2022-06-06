@@ -91,8 +91,9 @@ function showQuestion() {
 
 
 
-
 submitBtn.addEventListener("click", function () {
+
+    var score = 0; score++
 
 
     for (let i = 0; i < answerEls.length; i++) {
@@ -102,7 +103,8 @@ submitBtn.addEventListener("click", function () {
             } else {
                 document.getElementById('submit').innerHTML = "incorrect!";
             }
-        }
+        } 
+
     }
 
 
@@ -117,6 +119,3 @@ showQuestion()
  
 
 
-function startQuiz() {
-    qsectionEl.hidden = '';
-}
