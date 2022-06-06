@@ -88,8 +88,12 @@ function showQuestion() {
 }
 
 
+startBtnEl.addEventListener("click", () => {
+    console.log("event listener working");
+    
+  });
 
-
+console.log("testing event listener")
 
 submitBtn.addEventListener("click", function () {
 
