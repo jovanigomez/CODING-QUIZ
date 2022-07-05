@@ -68,7 +68,7 @@ const b = document.getElementById('b')
 const c = document.getElementById('c')
 const d = document.getElementById('d')
 const submitBtn = document.getElementById('submit')
-
+const startBtn = document.getElementById('start-btn')
 let questionIndex = 0
 
 function showQuestion() {
@@ -87,11 +87,10 @@ function showQuestion() {
 
 }
 
-
-startBtnEl.addEventListener("click", () => {
+startBtnEl.addEventListener("click", showQuestion); {
     console.log("event listener working");
-    
-  });
+      
+  }
 
 console.log("testing event listener")
 
